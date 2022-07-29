@@ -17,13 +17,13 @@ class UserFactory extends Factory
      */
     public function definition()
     {
-        $thumb = $this->faker->image('public/images/users',640,480);
+        $thumb = $this->faker->image('public/images/users', 640, 480);
         return [
             'firstName' => $this->faker->firstName(),
             'lastName' => $this->faker->lastName(),
             'email' => $this->faker->safeEmail(),
-            'thumb' => str_replace('public','', $thumb),
-            'password' => bcrypt('123'), // password
+            'thumb' => str_replace('public', '', $thumb),
+            'password' => bcrypt('123'),
         ];
     }
 
