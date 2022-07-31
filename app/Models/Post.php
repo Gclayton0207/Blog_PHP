@@ -23,7 +23,7 @@ class Post extends Model
         return self::where('title', "like", "%{$search}%")
         ->orWhere('content', "like", "%{$search}%")
         ->with(['user','comments'])
-        ->paginate(3);
+        ->paginate(10);
     }
 }
 
