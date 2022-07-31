@@ -14,3 +14,4 @@ Route::get('/post/{post:slug}', [PostController::class,'show'])->name('post');
 Route::get('/login', [LoginController::class,'index'])->name('login');
 Route::post('/login', [LoginController::class,'store'])->name('login');
 Route::get('/logout', [LoginController::class,'destroy'])->name('logout');
+Route::get('/posts', [PostsController::class,'index'])->name('posts');
