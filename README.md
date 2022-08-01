@@ -6,8 +6,6 @@
 - Altere o arquivo ``.env.example`` para ``.env``
 - Insira suas credenciais do MySql ![image](https://user-images.githubusercontent.com/75399046/182144769-3595e81b-961f-48f1-8d2e-074f992a7516.png)
 
-- Insira os mesmos dados no arquivo ``config.py`` para ter conexão com o banco de dados
-
 - Utilize o comando `` composer`` no terminal para instalar os requerimentos do projeto
 - Utilize o comando `` php artisan migrate`` no terminal para migrar as tabelas para o banco de dados
 - Utilize o comando ``php artisan key:generate`` no terminal para gerar uma chave para usar o app
